@@ -34,14 +34,42 @@ Sodexo News es un proyecto que te permite guardar tus noticias favoritas.
 
 ## Instalación
 
-1. Clona este repositorio: `git clone https://github.com/alanriba/sodexo-news.git`
+1. Clona este repositorio: `git clone https://github.com/tu-usuario/sodexo-news.git`
 2. Navega al directorio del proyecto: `cd sodexo-news`
 3. Compila el proyecto: `mvn clean package`
 
-## Uso
+## Configuración de la Base de Datos
 
-1. Ejecuta la aplicación: `mvn spring-boot:run`
-2. Accede a la aplicación en tu navegador: `http://localhost:8080`
+Sodexo News utiliza la base de datos H2 en memoria. La configuración de la base de datos se realiza en el archivo `application.properties` o `application.yml`:
+
+```properties
+# Configuración de H2 Database
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+```
+
+La configuración anterior establece una base de datos H2 en memoria, habilita la consola de H2 para acceder a la base de datos a través de una interfaz web y configura el dialecto de H2 para JPA.
+
+
+## Pruebas Unitarias
+Sodexo News incluye pruebas unitarias para garantizar la calidad del código. Las pruebas se realizan utilizando JUnit y las herramientas de prueba proporcionadas por Spring Boot.
+
+Para ejecutar las pruebas unitarias, puedes utilizar el siguiente comando:
+
+```batch
+mvn test
+```
+
+## Uso
+Ejecuta la aplicación: mvn spring-boot:run
+Accede a la aplicación en tu navegador: http://localhost:8080
+Contribución
+Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
 
 ## Contribución
 
