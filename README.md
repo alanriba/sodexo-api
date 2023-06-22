@@ -15,6 +15,7 @@ Sodexo News es un proyecto que te permite guardar tus noticias favoritas.
 
 - Java 17
 - Maven 3.8.2
+- Angular 8 o superior
 
 ## Dependencias
 
