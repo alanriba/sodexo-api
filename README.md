@@ -35,7 +35,7 @@ Sodexo News es un proyecto que te permite guardar tus noticias favoritas.
 
 ## Instalación
 
-1. Clona este repositorio: `git clone https://github.com/tu-usuario/sodexo-news.git`
+1. Clona este repositorio: `git clone https://github.com/alanriba/sodexo-news.git`
 2. Navega al directorio del proyecto: `cd sodexo-news`
 3. Compila el proyecto: `mvn clean package`
 
